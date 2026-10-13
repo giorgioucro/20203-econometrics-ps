@@ -1,0 +1,25 @@
+Assignment 2 Python replication - validation summary
+==========================================================
+
+Exact to reported precision: 195
+Recreated figures: 3
+Documented report discrepancies: 6
+Unexpected mismatches: 0
+
+Documented discrepancies
+------------------------
+- Slides 10-11: M1 / HQ: report=-6.4908, Python=-6.4908693674483064. The slide differs from the full-precision EViews-equivalent calculation by less than 0.0001, consistent with manual truncation or transcription in the presentation table.
+- Slides 10-11: M2 / SIC: report=-6.4237, Python=-6.423768128943262. The slide differs from the full-precision EViews-equivalent calculation by less than 0.0001, consistent with manual truncation or transcription in the presentation table.
+- Slides 10-11: M3 / SIC: report=-6.5012, Python=-6.501251132902746. The slide differs from the full-precision EViews-equivalent calculation by less than 0.0001, consistent with manual truncation or transcription in the presentation table.
+- Slides 10-11: M3 / HQ: report=-6.5777, Python=-6.5777870036782025. The slide differs from the full-precision EViews-equivalent calculation by less than 0.0001, consistent with manual truncation or transcription in the presentation table.
+- Slides 10-11: D4 / coefficient ip_yoy: report=0.312, Python=0.31169594424795866. The slide prints 0.3120, while the fitted model is 0.311696 (0.3117 at four decimals). The latter is confirmed by the exact reported D4 forecast statistics, so 0.3120 is a transcription error.
+- Slide 15: diagnostic tests / p-value White homoskedasticity: report=0.9663, Python=0.956338345777973. The slide prints 0.9663. The EViews-style White auxiliary regression with squares and cross-products gives F p=0.956338 (0.9563), indicating a slide transcription error; the inference is unchanged.
+
+Figure scope
+------------
+- Slides 5-6: five time-series plots recreated.
+- Slide 15: residual histogram and all printed residual statistics recreated.
+- Slide 16: six recursive-diagnostic panels recreated.
+- Slides 17-18: D4, AR(2), and VAR(2) forecast plots recreated.
+
+See validation_summary.csv for every numerical comparison.
